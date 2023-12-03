@@ -1,0 +1,11 @@
+open_port: 8080
+prometheus_export:
+  port: 9400
+grafana:
+  otlp:
+    cloud_submit:
+      - traces
+      - metrics
+    cloud_zone: prod-ap-southeast-1
+    cloud_instance_id: ******
+    cloud_api_key: ******

@@ -1,0 +1,16 @@
+[package]
+name = "beyla-rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+tracing = "0.1.19"
+opentelemetry = { version = "0.19", features = ["rt-tokio-current-thread"] }
+opentelemetry-jaeger = { version = "0.18", features = ["rt-tokio-current-thread"] }
+tracing-opentelemetry = { version = "0.19" }
+tracing-subscriber = { version = "0.3", features = ["registry", "env-filter"] }
+tracing-bunyan-formatter = "0.3"
+tracing-actix-web = { version = "0.7", features = ["opentelemetry_0_19"] }

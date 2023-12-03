@@ -1,0 +1,7 @@
+open_port: 8080
+prometheus_export:
+  port: 9400
+otel_traces_export:
+  endpoint: http://localhost:4318
+ebpf:
+  track_request_headers: true
